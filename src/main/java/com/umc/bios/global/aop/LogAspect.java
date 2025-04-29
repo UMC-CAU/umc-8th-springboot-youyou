@@ -15,7 +15,7 @@ public class LogAspect {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    @Pointcut("within(com.umc.bios..*)")
+    @Pointcut("within(com.umc.bios.api..*)")
     public void logPointcut() {
         // pintCut signature 메소드에는 내용이 없어야함
     }
@@ -33,7 +33,7 @@ public class LogAspect {
         Object[] args = joinPoint.getArgs();
         long time = stopWatch.getLastTaskTimeMillis();
 
-        logger.info("실행된 메소드 : {}, args : {}, time : {}ms",
+        logger.info("실행 메소드 : {}, args : {}, time : {}ms",
                 methodName,
                 args.length > 0 ? args[0] : "no-args",
                 time
