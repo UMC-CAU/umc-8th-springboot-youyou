@@ -8,14 +8,14 @@ spring:
 
   #jpa
   jpa:
+    hibernate:
+      ddl-auto: update
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
-        highlight_sql: true # 색상 부여
+        highlight_sql: true
         format_sql: true
-        show_sql: true # hibernate sql 로그 활성화
-        hbm2ddl:
-          auto: update
+        show_sql: true
         default_batch_fetch_size: 1000
 
   #log
