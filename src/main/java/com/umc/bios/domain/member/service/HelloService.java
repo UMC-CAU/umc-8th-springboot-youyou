@@ -1,4 +1,4 @@
-package com.umc.bios.api.service;
+package com.umc.bios.domain.member.service;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
