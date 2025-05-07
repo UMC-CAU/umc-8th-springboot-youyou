@@ -4,47 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39563852-7eb9-411d-8060-91e6f80fbfb8" name="변경" comment="feature/#2: BaseEntity 생성">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/member/common/Gender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/member/common/MemberStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/member/common/SocialType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/member/entity/FoodCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/member/entity/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/member/entity/MemberAgree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/member/entity/Terms.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/mission/common/MissionStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/mission/entity/MemberMission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/mission/entity/MemberPrefer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/mission/entity/Mission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/review/entity/Review.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/store/entity/Region.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/store/entity/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+    <list default="true" id="39563852-7eb9-411d-8060-91e6f80fbfb8" name="변경" comment="fix:">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/umc/bios/BiosApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/umc/bios/BiosApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/umc/bios/aop/LogAspect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/umc/bios/controller/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/umc/bios/service/HelloService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application-local.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/HelloController.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/HelloService.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/umc/bios/api/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/member/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/umc/bios/api/domain/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/member/dto/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/umc/bios/api/dto/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/member/repository/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/umc/bios/api/repository/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/umc/bios/api/service/HelloService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/member/service/HelloService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/umc/bios/global/aop/LogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/global/aop/LogAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-local.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +53,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -280,7 +242,8 @@
       <workItem from="1744096828099" duration="2754000" />
       <workItem from="1745861277214" duration="4338000" />
       <workItem from="1745901623590" duration="199000" />
-      <workItem from="1745901836978" duration="4783000" />
+      <workItem from="1745901836978" duration="9755000" />
+      <workItem from="1746070450090" duration="2212000" />
     </task>
     <task id="LOCAL-00001" summary="chore: initial project setup">
       <option name="closed" value="true" />
@@ -362,7 +325,71 @@
       <option name="project" value="LOCAL" />
       <updated>1745903091622</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="chore/#2: .gitkeep 삭제">
+      <option name="closed" value="true" />
+      <created>1745906820765</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1745906820765</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feature/#2: mission5 Entity 설계 및 연관관계 매핑">
+      <option name="closed" value="true" />
+      <created>1745906875818</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1745906875818</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feature/#2: application.yml hibernate 옵션 수정( ddl-auto : create -&gt; update)">
+      <option name="closed" value="true" />
+      <created>1745907158805</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1745907158806</updated>
+    </task>
+    <task id="LOCAL-00014" summary="refactor/#2: AOP test 패키지 위치 변경">
+      <option name="closed" value="true" />
+      <created>1745907367231</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1745907367231</updated>
+    </task>
+    <task id="LOCAL-00015" summary="chore/#2: 빈 패키지를 위한 .gitkeep 생성">
+      <option name="closed" value="true" />
+      <created>1746074220476</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1746074220476</updated>
+    </task>
+    <task id="LOCAL-00016" summary="feature/#2: Member 필드의 List&lt;MemberPrefer&gt; -&gt; Set&lt;MemberPrefer&gt; 변경">
+      <option name="closed" value="true" />
+      <created>1746074293324</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1746074293324</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feature/#2: MemberRepository, MemberAgreeRepository 생성">
+      <option name="closed" value="true" />
+      <created>1746074338495</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1746074338495</updated>
+    </task>
+    <task id="LOCAL-00018" summary="feature/#2: MemberService 생성">
+      <option name="closed" value="true" />
+      <created>1746074358262</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1746074358262</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,6 +402,14 @@
     <MESSAGE value="feature/#2: application.yml JPA Hibernate 설정 추가" />
     <MESSAGE value="feature/#2: @EnableJpaAuditing 어노테이션 추가" />
     <MESSAGE value="feature/#2: BaseEntity 생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature/#2: BaseEntity 생성" />
+    <MESSAGE value="chore/#2: .gitkeep 삭제" />
+    <MESSAGE value="feature/#2: mission5 Entity 설계 및 연관관계 매핑" />
+    <MESSAGE value="feature/#2: application.yml hibernate 옵션 수정( ddl-auto : create -&gt; update)" />
+    <MESSAGE value="refactor/#2: AOP test 패키지 위치 변경" />
+    <MESSAGE value="chore/#2: 빈 패키지를 위한 .gitkeep 생성" />
+    <MESSAGE value="feature/#2: Member 필드의 List&lt;MemberPrefer&gt; -&gt; Set&lt;MemberPrefer&gt; 변경" />
+    <MESSAGE value="feature/#2: MemberRepository, MemberAgreeRepository 생성" />
+    <MESSAGE value="feature/#2: MemberService 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature/#2: MemberService 생성" />
   </component>
 </project>
