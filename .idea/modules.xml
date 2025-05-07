@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Bios.iml" filepath="$PROJECT_DIR$/Bios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Bios.iml" filepath="$PROJECT_DIR$/.idea/modules/Bios.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Bios.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Bios.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Bios.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Bios.test.iml" />
     </modules>
