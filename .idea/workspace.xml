@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39563852-7eb9-411d-8060-91e6f80fbfb8" name="변경" comment="fix/#3: Resolve merge conflicts">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/store/entity/Region.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/store/entity/Region.java" afterDir="false" />
+    <list default="true" id="39563852-7eb9-411d-8060-91e6f80fbfb8" name="변경" comment="chore/#3: HELP.md 삭제">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.13/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -542,7 +545,31 @@
       <option name="project" value="LOCAL" />
       <updated>1746600733248</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="fix/#3: Resolve merge conflicts">
+      <option name="closed" value="true" />
+      <created>1746601538098</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1746601538098</updated>
+    </task>
+    <task id="LOCAL-00021" summary="feature/#3: Region Entity 생성">
+      <option name="closed" value="true" />
+      <created>1746601553635</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1746601553635</updated>
+    </task>
+    <task id="LOCAL-00022" summary="chore/#3: HELP.md 삭제">
+      <option name="closed" value="true" />
+      <created>1746601708829</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1746601708829</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,6 +614,8 @@
     <MESSAGE value="feature/#2: MemberRepository, MemberAgreeRepository 생성" />
     <MESSAGE value="feature/#2: MemberService 생성" />
     <MESSAGE value="fix/#3: Resolve merge conflicts" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix/#3: Resolve merge conflicts" />
+    <MESSAGE value="feature/#3: Region Entity 생성" />
+    <MESSAGE value="chore/#3: HELP.md 삭제" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore/#3: HELP.md 삭제" />
   </component>
 </project>
