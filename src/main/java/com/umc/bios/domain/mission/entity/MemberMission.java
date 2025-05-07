@@ -6,7 +6,6 @@ import com.umc.bios.domain.mission.common.MissionStatus;
 import jakarta.persistence.*;
 import lombok.Getter;
 
-import java.util.ArrayList;
 
 @Entity
 @Getter
