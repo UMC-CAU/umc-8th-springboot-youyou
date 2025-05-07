@@ -4,11 +4,60 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39563852-7eb9-411d-8060-91e6f80fbfb8" name="변경" comment="chore/#3: HELP.md 삭제">
+    <list default="true" id="39563852-7eb9-411d-8060-91e6f80fbfb8" name="변경" comment="feature/#3: QueryDSL 의존성 추가">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/store/repository/StoreRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/store/repository/StoreRepositoryCustom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/store/repository/StoreRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/store/service/StoreQueryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/store/service/StoreQueryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/global/config/QueryDSLConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Bios.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Bios.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Bios.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Bios.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/umc/bios/domain/member/controller/HelloController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/umc/bios/domain/member/entity/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/umc/bios/domain/member/entity/Member.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/umc/bios/domain/member/service/HelloService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/umc/bios/domain/mission/entity/MemberMission.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/umc/bios/domain/mission/entity/MemberMission.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/umc/bios/domain/mission/entity/MemberPrefer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/umc/bios/domain/mission/entity/MemberPrefer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/umc/bios/domain/mission/entity/Mission.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/umc/bios/domain/mission/entity/Mission.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/umc/bios/domain/review/entity/Review.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/umc/bios/domain/review/entity/Review.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/umc/bios/domain/store/entity/Region.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/umc/bios/domain/store/entity/Region.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/umc/bios/domain/store/entity/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/umc/bios/domain/store/entity/Store.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/umc/bios/global/aop/LogAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/umc/bios/global/aop/LogAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/Bios-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Bios-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/Bios-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Bios-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.umc.bios.BiosApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.umc.bios.BiosApplicationTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.umc.bios.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.umc.bios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.umc.bios.BiosApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.umc.bios.BiosApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/FoodCategory.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/MemberPrefer.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/mission/entity/MemberMission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/mission/entity/MemberMission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/mission/entity/Mission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/mission/entity/Mission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/review/entity/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/review/entity/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/store/entity/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/store/entity/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/umc/bios/domain/store/service/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/umc/bios/global/config/.gitkeep" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +82,17 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Bios" type="f1a62948:ProjectNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Bios" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Bios" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -44,8 +104,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -87,13 +147,13 @@
     "Spring Boot.BiosApplication.executor": "Run",
     "git-widget-placeholder": "feature/#3/Chapter-06",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/yurry/Documents/UMC/Bios",
+    "last_opened_file_path": "C:/Users/yurry/Documents/ITTA/BE/BE",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "아티팩트",
+    "project.structure.last.edited": "모듈",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.24713376",
     "settings.editor.selected.configurable": "preferences.pluginManager",
@@ -359,9 +419,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP 요청.generated-requests | #66" />
         <item itemvalue="Gradle.Bios [build]" />
         <item itemvalue="Gradle.Bios [clean]" />
+        <item itemvalue="HTTP 요청.generated-requests | #66" />
         <item itemvalue="Gradle.Bios [dependencies]" />
       </list>
     </recent_temporary>
@@ -569,7 +629,23 @@
       <option name="project" value="LOCAL" />
       <updated>1746601708829</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="feat/#3: Swagger 의존성 추가">
+      <option name="closed" value="true" />
+      <created>1746602596655</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1746602596656</updated>
+    </task>
+    <task id="LOCAL-00024" summary="feature/#3: QueryDSL 의존성 추가">
+      <option name="closed" value="true" />
+      <created>1746602629248</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1746602629248</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -616,6 +692,8 @@
     <MESSAGE value="fix/#3: Resolve merge conflicts" />
     <MESSAGE value="feature/#3: Region Entity 생성" />
     <MESSAGE value="chore/#3: HELP.md 삭제" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore/#3: HELP.md 삭제" />
+    <MESSAGE value="feat/#3: Swagger 의존성 추가" />
+    <MESSAGE value="feature/#3: QueryDSL 의존성 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature/#3: QueryDSL 의존성 추가" />
   </component>
 </project>
