@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: Bios
+
+  profiles:
+    group:
+      local: "local"
+
+  #jpa
+  jpa:
+    show-sql: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+
+  #log
+  logging:
+    level:
+      root: INFO
