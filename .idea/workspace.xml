@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="39563852-7eb9-411d-8060-91e6f80fbfb8" name="변경" comment="fix:">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Bios" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Bios" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Bios" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/#1/Chapter-04" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2v7Rd61oatvi8Hw3ZK8SQ5gvM44" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Bios [build].executor": "Run",
+    "Gradle.Bios [clean].executor": "Run",
+    "Gradle.Bios [dependencies].executor": "Run",
+    "Gradle.Bios 빌드.executor": "Run",
+    "HTTP 요청.generated-requests | #66.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.BiosApplication.executor": "Run",
+    "git-widget-placeholder": "feature/#2/Chpater-05",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/yurry/Documents/UMC/Bios",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "아티팩트",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.24713376",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.BiosApplication">
+    <configuration name="Bios [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Bios [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Bios [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #66" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="66" requestIdentifier="#66" runType="단일 요청 실행">
+      <method v="2" />
+    </configuration>
+    <configuration name="BiosApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="local" />
+      <option name="envFilePaths">
+        <option value="$PROJECT_DIR$/.env" />
+      </option>
+      <module name="Bios.main" />
+      <selectedOptions>
+        <option name="environmentVariables" />
+      </selectedOptions>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.umc.bios.BiosApplication" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="true" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="true" />
+        <option name="IS_IGNORE_MISSING_FILES" value="true" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="true" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.Bios [build]" />
+      <item itemvalue="Gradle.Bios [clean]" />
+      <item itemvalue="Gradle.Bios [dependencies]" />
+      <item itemvalue="HTTP 요청.generated-requests | #66" />
+      <item itemvalue="Spring Boot.BiosApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP 요청.generated-requests | #66" />
+        <item itemvalue="Gradle.Bios [build]" />
+        <item itemvalue="Gradle.Bios [clean]" />
+        <item itemvalue="Gradle.Bios [dependencies]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="39563852-7eb9-411d-8060-91e6f80fbfb8" name="변경" comment="" />
+      <created>1743494211592</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743494211592</updated>
+      <workItem from="1743494212676" duration="1054000" />
+      <workItem from="1743845542049" duration="1850000" />
+      <workItem from="1743847456115" duration="308000" />
+      <workItem from="1743847781195" duration="454000" />
+      <workItem from="1743848258315" duration="9248000" />
+      <workItem from="1744096828099" duration="2754000" />
+      <workItem from="1745861277214" duration="4338000" />
+      <workItem from="1745901623590" duration="199000" />
+      <workItem from="1745901836978" duration="9755000" />
+      <workItem from="1746070450090" duration="2212000" />
+    </task>
+    <task id="LOCAL-00001" summary="chore: initial project setup">
+      <option name="closed" value="true" />
+      <created>1745899694170</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1745899694170</updated>
+    </task>
+    <task id="LOCAL-00002" summary="chore: initial project setup">
+      <option name="closed" value="true" />
+      <created>1745900177118</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745900177118</updated>
+    </task>
+    <task id="LOCAL-00003" summary="chore: initial project setup">
+      <option name="closed" value="true" />
+      <created>1745901140280</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1745901140280</updated>
+    </task>
+    <task id="LOCAL-00004" summary="chore: initial project setup">
+      <option name="closed" value="true" />
+      <created>1745901644281</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745901644281</updated>
+    </task>
+    <task id="LOCAL-00005" summary="chore: initial project setup">
+      <option name="closed" value="true" />
+      <created>1745901876695</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745901876695</updated>
+    </task>
+    <task id="LOCAL-00006" summary="chore: initial project setup">
+      <option name="closed" value="true" />
+      <created>1745902093278</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1745902093278</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feature/#1 : LogAspect logging 구현">
+      <option name="closed" value="true" />
+      <created>1745902144344</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1745902144344</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feature/#2: application.yml JPA Hibernate 설정 추가">
+      <option name="closed" value="true" />
+      <created>1745903056016</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1745903056016</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feature/#2: @EnableJpaAuditing 어노테이션 추가">
+      <option name="closed" value="true" />
+      <created>1745903077596</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1745903077596</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feature/#2: BaseEntity 생성">
+      <option name="closed" value="true" />
+      <created>1745903091622</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1745903091622</updated>
+    </task>
+    <task id="LOCAL-00011" summary="chore/#2: .gitkeep 삭제">
+      <option name="closed" value="true" />
+      <created>1745906820765</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1745906820765</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feature/#2: mission5 Entity 설계 및 연관관계 매핑">
+      <option name="closed" value="true" />
+      <created>1745906875818</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1745906875818</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feature/#2: application.yml hibernate 옵션 수정( ddl-auto : create -&gt; update)">
+      <option name="closed" value="true" />
+      <created>1745907158805</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1745907158806</updated>
+    </task>
+    <task id="LOCAL-00014" summary="refactor/#2: AOP test 패키지 위치 변경">
+      <option name="closed" value="true" />
+      <created>1745907367231</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1745907367231</updated>
+    </task>
+    <task id="LOCAL-00015" summary="chore/#2: 빈 패키지를 위한 .gitkeep 생성">
+      <option name="closed" value="true" />
+      <created>1746074220476</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1746074220476</updated>
+    </task>
+    <task id="LOCAL-00016" summary="feature/#2: Member 필드의 List&lt;MemberPrefer&gt; -&gt; Set&lt;MemberPrefer&gt; 변경">
+      <option name="closed" value="true" />
+      <created>1746074293324</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1746074293324</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feature/#2: MemberRepository, MemberAgreeRepository 생성">
+      <option name="closed" value="true" />
+      <created>1746074338495</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1746074338495</updated>
+    </task>
+    <task id="LOCAL-00018" summary="feature/#2: MemberService 생성">
+      <option name="closed" value="true" />
+      <created>1746074358262</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1746074358262</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chore: initial project setup" />
+    <MESSAGE value="feature/#1 : LogAspect logging 구현" />
+    <MESSAGE value="chore : initial project setup" />
+    <MESSAGE value="feature/#2: application.yml JPA Hibernate 설정 추가" />
+    <MESSAGE value="feature/#2: @EnableJpaAuditing 어노테이션 추가" />
+    <MESSAGE value="feature/#2: BaseEntity 생성" />
+    <MESSAGE value="chore/#2: .gitkeep 삭제" />
+    <MESSAGE value="feature/#2: mission5 Entity 설계 및 연관관계 매핑" />
+    <MESSAGE value="feature/#2: application.yml hibernate 옵션 수정( ddl-auto : create -&gt; update)" />
+    <MESSAGE value="refactor/#2: AOP test 패키지 위치 변경" />
+    <MESSAGE value="chore/#2: 빈 패키지를 위한 .gitkeep 생성" />
+    <MESSAGE value="feature/#2: Member 필드의 List&lt;MemberPrefer&gt; -&gt; Set&lt;MemberPrefer&gt; 변경" />
+    <MESSAGE value="feature/#2: MemberRepository, MemberAgreeRepository 생성" />
+    <MESSAGE value="feature/#2: MemberService 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature/#2: MemberService 생성" />
+  </component>
+</project>
