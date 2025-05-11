@@ -28,3 +28,6 @@ spring:
   logging:
     level:
       root: INFO
+      org:
+        hibernate:
+          SQL: DEBUG
