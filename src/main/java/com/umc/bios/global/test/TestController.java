@@ -6,14 +6,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/hello")
+@RequestMapping("/test")
 @RequiredArgsConstructor
-public class HelloController {
+public class TestController {
 
     private final HelloService helloService;
 
-    @GetMapping("/world")
+    @GetMapping("/hello")
     public String helloWorld() {
         return helloService.sayHello();
     }
+
+
 }
