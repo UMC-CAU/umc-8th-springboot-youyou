@@ -8,6 +8,8 @@ import com.umc.bios.domain.mission.entity.MemberMission;
 import com.umc.bios.domain.mission.entity.MemberPrefer;
 import com.umc.bios.domain.review.entity.Review;
 import jakarta.persistence.*;
+import lombok.Builder;
+import lombok.RequiredArgsConstructor;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -16,6 +18,8 @@ import java.util.Set;
 
 @Entity
 @Table(name = "member")
+@Builder
+@RequiredArgsConstructor
 public class Member extends BaseEntity {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
