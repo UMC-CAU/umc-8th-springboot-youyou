@@ -8,6 +8,7 @@ import com.umc.bios.domain.mission.entity.MemberMission;
 import com.umc.bios.domain.mission.entity.MemberPrefer;
 import com.umc.bios.domain.review.entity.Review;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.RequiredArgsConstructor;
 
@@ -18,8 +19,9 @@ import java.util.Set;
 
 @Entity
 @Table(name = "member")
-@Builder
 @RequiredArgsConstructor
+@Builder
+@AllArgsConstructor
 public class Member extends BaseEntity {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
