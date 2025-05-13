@@ -2,8 +2,10 @@ package com.umc.bios.global.exception;
 
 import com.umc.bios.global.response.CommonResponse;
 import com.umc.bios.global.response.ErrorStatus;
+import com.umc.bios.global.util.WebhookNotifier;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.ConstraintViolationException;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatusCode;
@@ -14,13 +16,17 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
+import java.time.LocalDateTime;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Optional;
 
 @Slf4j
 @RestControllerAdvice
+@RequiredArgsConstructor
 public class ExceptionAdvice extends ResponseEntityExceptionHandler {
+
+    private final WebhookNotifier webhookNotifier;
 
     @ExceptionHandler
     public ResponseEntity<Object> validation(ConstraintViolationException e, WebRequest request) {
@@ -50,9 +56,23 @@ public class ExceptionAdvice extends ResponseEntityExceptionHandler {
     }
 
     @ExceptionHandler
-    public ResponseEntity<Object> exception(Exception e, WebRequest request) {
-        e.printStackTrace();
-        return (ResponseEntity) CommonResponse.onFailure(ErrorStatus._INTERNAL_SERVER_ERROR, e.getMessage());
+    public ResponseEntity<?> exception(Exception e, HttpServletRequest request) {
+
+        String errorMessage = String.format("""
+                서버 에러 발생
+                - URL: %s
+                - 시각: %s
+                - 메시지: %s
+                """,
+                request.getRequestURI(),
+                LocalDateTime.now(),
+                e.getMessage()
+        );
+
+        log.error("500 서버 오류", e);
+        webhookNotifier.send(errorMessage);
+
+        return CommonResponse.onFailure(ErrorStatus._INTERNAL_SERVER_ERROR, e.getMessage());
     }
 
     @ExceptionHandler(value = CustomException.class)
