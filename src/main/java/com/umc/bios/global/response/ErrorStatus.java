@@ -17,6 +17,9 @@ public enum ErrorStatus implements BaseErrorCode {
     // Member
     MEMBER_NOT_FOUND(HttpStatus.BAD_REQUEST, "ME4001", "사용자가 존재하지 않습니다."),
     NICKNAME_NOT_FOUND(HttpStatus.BAD_REQUEST, "ME4002", "닉네임은 필수입니다."),
+
+    // webhook
+    FAILED_SEND_WEBHOOK(HttpStatus.BAD_REQUEST, "WH4001", "웹훅 전송에 실패하였습니다."),
     ;
 
     private final HttpStatus httpStatus;
