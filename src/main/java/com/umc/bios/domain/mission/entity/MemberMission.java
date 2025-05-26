@@ -6,7 +6,6 @@ import com.umc.bios.domain.mission.common.MissionStatus;
 import jakarta.persistence.*;
 import lombok.Getter;
 
-import java.util.ArrayList;
 
 @Entity
 @Getter
@@ -14,9 +13,11 @@ public class MemberMission extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "member_mission_id")
     private Long id;
 
     @Enumerated(EnumType.STRING)
+    @Column(name = "status")
     private MissionStatus status;
 
     @ManyToOne(fetch = FetchType.LAZY)

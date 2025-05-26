@@ -16,10 +16,13 @@ public class Mission extends BaseEntity {
     @Column(name ="mission_id")
     private Long id;
 
+    @Column(name = "reward")
     private Integer reward;
 
+    @Column(name = "deadline")
     private LocalDate deadline;
 
+    @Column(name = "mission_spec")
     private String missionSpec;
 
     @ManyToOne(fetch = FetchType.LAZY)

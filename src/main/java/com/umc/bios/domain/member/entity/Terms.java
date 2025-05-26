@@ -12,14 +12,18 @@ public class Terms extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "terms_id")
     private Long id;
 
+    @Column(name = "title")
     private String title;
 
+    @Column(name = "body")
     private String body;
 
+    @Column(name = "optional")
     private Boolean optional;
 
-    @OneToMany(mappedBy = "terms")
+    @OneToMany(mappedBy = "terms", cascade = CascadeType.ALL)
     private List<MemberAgree> memberAgreeList = new ArrayList<>();
 }
