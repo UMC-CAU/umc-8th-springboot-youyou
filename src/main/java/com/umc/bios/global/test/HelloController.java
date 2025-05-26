@@ -1,6 +1,5 @@
-package com.umc.bios.api.controller;
+package com.umc.bios.global.test;
 
-import com.umc.bios.api.service.HelloService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

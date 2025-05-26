@@ -15,7 +15,7 @@ public class LogAspect {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    @Pointcut("within(com.umc.bios.api..*)")
+    @Pointcut("within(com.umc.bios.global..*)")
     public void logPointcut() {
         // pintCut signature 메소드에는 내용이 없어야함
     }
