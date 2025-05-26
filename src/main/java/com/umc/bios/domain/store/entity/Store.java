@@ -3,11 +3,19 @@ package com.umc.bios.domain.store.entity;
 import com.umc.bios.domain.common.BaseEntity;
 import com.umc.bios.domain.mission.entity.Mission;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Entity
 @Table(name = "store")
+@Builder
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Store extends BaseEntity {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -39,5 +47,9 @@ public class Store extends BaseEntity {
                 ", score=" + score +
                 ", region=" + (region != null ? region.getName() : "N/A") + // region의 이름 출력
                 '}';
+    }
+
+    public void setRegion(Region region) {
+        this.region = region;
     }
 }
