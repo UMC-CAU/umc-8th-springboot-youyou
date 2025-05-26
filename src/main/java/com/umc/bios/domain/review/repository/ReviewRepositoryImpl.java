@@ -19,7 +19,7 @@ public class ReviewRepositoryImpl implements ReviewRepositoryCustom{
     private final StoreRepository storeRepository;
 
     @Override
-    public void insertReviewFromMemberId(Long memberId, Long storeId, Float score, String title) {
+    public Review insertReviewFromMemberId(Long memberId, Long storeId, Float score, String title) {
 
         QMember member = QMember.member;
 
@@ -39,6 +39,8 @@ public class ReviewRepositoryImpl implements ReviewRepositoryCustom{
             review.setTitle(title);
 
             entityManager.persist(review);
+            return review;
         }
+        return null;
     }
 }
