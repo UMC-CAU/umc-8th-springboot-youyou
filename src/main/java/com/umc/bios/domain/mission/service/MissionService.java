@@ -77,4 +77,27 @@ public class MissionService {
                 .map(MemberMission::toResponseDto)
                 .toList();
     }
+
+    @Transactional
+    public MissionResponseDto done(Long storeId, Long memberId, Long missionId) {
+        // TODO : SecurityContext를 통한 memberID 취득으로 변경
+
+        Store store = storeRepository.findById(storeId)
+                .orElseThrow(() -> CustomException.of(ErrorStatus.STORE_NOT_FOUND));
+
+        Mission mission = missionRepository.findById(missionId)
+                .orElseThrow(() -> CustomException.of(ErrorStatus.MISSION_NOT_FOUND));
+
+        if (!store.getMissionList().contains(mission)) {
+            throw CustomException.of(ErrorStatus.UNMATCHED_MISSION_TO_STORE);
+        }
+
+        Member member = memberRepository.findById(memberId)
+                .orElseThrow(() -> CustomException.of(ErrorStatus.MEMBER_NOT_FOUND));
+
+        MemberMission memberMission = memberMissionRepository.findByMember(member)
+                .orElseThrow(() -> CustomException.of(ErrorStatus.MISSION_NOT_FOUND));
+        memberMission.setStatus(MissionStatus.COMPLETE);
+        return MemberMission.toResponseDto(memberMission);
+    }
 }

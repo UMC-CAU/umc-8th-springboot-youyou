@@ -7,6 +7,7 @@ import com.umc.bios.domain.mission.dto.MissionResponseDto;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 
 
 @Entity
@@ -20,6 +21,7 @@ public class MemberMission extends BaseEntity {
     private Long id;
 
     @Enumerated(EnumType.STRING)
+    @Setter
     @Column(name = "status")
     private MissionStatus status;
 
