@@ -17,6 +17,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 
 @Service
 @RequiredArgsConstructor
@@ -66,5 +68,13 @@ public class MissionService {
         MemberMission memberMission = new MemberMission(MissionStatus.CHALLENGING, member, mission);
         memberMissionRepository.save(memberMission);
         return MissionResponseDto.ChallengeDto.toChallengeDto(memberMission.getMission());
+    }
+
+    @Transactional(readOnly = true)
+    public List<MissionResponseDto> readAll(Long memberId) {
+        return memberMissionRepository.findByStatus(MissionStatus.CHALLENGING)
+                .stream()
+                .map(MemberMission::toResponseDto)
+                .toList();
     }
 }

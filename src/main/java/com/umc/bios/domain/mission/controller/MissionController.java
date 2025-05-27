@@ -31,6 +31,7 @@ public class MissionController {
         );
     }
 
+    // 미션 도전하기
     @PatchMapping
     public ResponseEntity<CommonResponse<?>> challenge(
             @RequestParam Long storeId,
@@ -40,6 +41,17 @@ public class MissionController {
     ) {
         return ResponseEntity.ok(
                 CommonResponse.onSuccess(missionService.challenge(storeId, memberId, missionId))
+        );
+    }
+
+    // 진행중인 미션 조회
+    @GetMapping
+    public ResponseEntity<CommonResponse<?>> getMissions(
+            // TODO : SecurityContext를 통한 memberID 취득으로 변경
+            @PathVariable Long memberId
+    ) {
+        return ResponseEntity.ok(
+                CommonResponse.onSuccess(missionService.readAll(memberId))
         );
     }
 }
