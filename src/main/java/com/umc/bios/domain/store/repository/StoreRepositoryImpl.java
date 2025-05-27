@@ -2,6 +2,7 @@ package com.umc.bios.domain.store.repository;
 
 import com.querydsl.core.BooleanBuilder;
 import com.querydsl.jpa.impl.JPAQueryFactory;
+import com.umc.bios.domain.store.entity.QRegion;
 import com.umc.bios.domain.store.entity.QStore;
 import com.umc.bios.domain.store.entity.Store;
 import lombok.RequiredArgsConstructor;
@@ -31,6 +32,16 @@ public class StoreRepositoryImpl implements StoreRepositoryCustom {
         return jpaQueryFactory
                 .selectFrom(store)
                 .where(predicate)
+                .fetch();
+    }
+
+    @Override
+    public List<Store> findByRegionName(String regionName) {
+        QRegion region = QRegion.region;
+
+        return jpaQueryFactory
+                .selectFrom(store)
+                .where(region.name.eq(regionName))
                 .fetch();
     }
 }

@@ -9,4 +9,5 @@ public class ReviewResponseDto {
     private String title;
     private String content;
     private Float score;
+    private String writer;
 }

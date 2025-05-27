@@ -6,6 +6,8 @@ import com.umc.bios.domain.member.entity.QMember;
 import com.umc.bios.domain.review.entity.Review;
 import com.umc.bios.domain.store.entity.Store;
 import com.umc.bios.domain.store.repository.StoreRepository;
+import com.umc.bios.global.exception.CustomException;
+import com.umc.bios.global.response.ErrorStatus;
 import jakarta.persistence.EntityManager;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
@@ -29,7 +31,7 @@ public class ReviewRepositoryImpl implements ReviewRepositoryCustom{
                 .fetchOne();
 
         Store store = storeRepository.findById(storeId)
-                .orElseThrow(() -> new IllegalArgumentException("Store not found."));
+                .orElseThrow(() -> CustomException.of(ErrorStatus.STORE_NOT_FOUND));
 
         if (foundMember != null) {
             Review review = new Review();

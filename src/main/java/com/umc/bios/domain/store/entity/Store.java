@@ -2,6 +2,7 @@ package com.umc.bios.domain.store.entity;
 
 import com.umc.bios.domain.common.BaseEntity;
 import com.umc.bios.domain.mission.entity.Mission;
+import com.umc.bios.domain.store.dto.StoreResponseDto;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -51,5 +52,13 @@ public class Store extends BaseEntity {
 
     public void setRegion(Region region) {
         this.region = region;
+    }
+
+    public static StoreResponseDto toResponseDto(Store store) {
+        return StoreResponseDto.builder()
+                .name(store.getName())
+                .address(store.getAddress())
+                .score(store.getScore())
+                .build();
     }
 }
