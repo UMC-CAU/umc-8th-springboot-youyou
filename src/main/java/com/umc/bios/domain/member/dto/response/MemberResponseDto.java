@@ -23,4 +23,13 @@ public class MemberResponseDto {
                 .memberId(member.getId())
                 .createdAt(member.getCreatedAt()).build();
     }
+
+    @Builder
+    @Getter
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class LoginResultDTO {
+        Long memberId;
+        String accessToken;
+    }
 }

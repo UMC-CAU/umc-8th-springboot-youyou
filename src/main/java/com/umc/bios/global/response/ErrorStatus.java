@@ -33,6 +33,9 @@ public enum ErrorStatus implements BaseErrorCode {
 
     // webhook
     FAILED_SEND_WEBHOOK(HttpStatus.BAD_REQUEST, "WH4001", "웹훅 전송에 실패하였습니다."),
+
+    // token
+    INVALID_TOKEN(HttpStatus.UNAUTHORIZED, "TE4001", "유효하지 않은 토큰입니다."),
     ;
 
     private final HttpStatus httpStatus;
