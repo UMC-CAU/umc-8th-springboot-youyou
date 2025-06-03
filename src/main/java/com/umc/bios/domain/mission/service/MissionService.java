@@ -17,6 +17,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 
 @Service
 @RequiredArgsConstructor
@@ -66,5 +68,36 @@ public class MissionService {
         MemberMission memberMission = new MemberMission(MissionStatus.CHALLENGING, member, mission);
         memberMissionRepository.save(memberMission);
         return MissionResponseDto.ChallengeDto.toChallengeDto(memberMission.getMission());
+    }
+
+    @Transactional(readOnly = true)
+    public List<MissionResponseDto> readAll(Long memberId) {
+        return memberMissionRepository.findByStatus(MissionStatus.CHALLENGING)
+                .stream()
+                .map(MemberMission::toResponseDto)
+                .toList();
+    }
+
+    @Transactional
+    public MissionResponseDto done(Long storeId, Long memberId, Long missionId) {
+        // TODO : SecurityContext를 통한 memberID 취득으로 변경
+
+        Store store = storeRepository.findById(storeId)
+                .orElseThrow(() -> CustomException.of(ErrorStatus.STORE_NOT_FOUND));
+
+        Mission mission = missionRepository.findById(missionId)
+                .orElseThrow(() -> CustomException.of(ErrorStatus.MISSION_NOT_FOUND));
+
+        if (!store.getMissionList().contains(mission)) {
+            throw CustomException.of(ErrorStatus.UNMATCHED_MISSION_TO_STORE);
+        }
+
+        Member member = memberRepository.findById(memberId)
+                .orElseThrow(() -> CustomException.of(ErrorStatus.MEMBER_NOT_FOUND));
+
+        MemberMission memberMission = memberMissionRepository.findByMember(member)
+                .orElseThrow(() -> CustomException.of(ErrorStatus.MISSION_NOT_FOUND));
+        memberMission.setStatus(MissionStatus.COMPLETE);
+        return MemberMission.toResponseDto(memberMission);
     }
 }

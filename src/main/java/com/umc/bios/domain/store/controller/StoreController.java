@@ -20,15 +20,67 @@ public class StoreController {
 
     @Operation(summary = "가게 추가 API", description = """
             특정 지역에 가게를 추가합니다.<br>
-            path에 추가될 지역의 아이디를 입력해주세요.
             """)
-    @PostMapping("/{regionId}")
+    @PostMapping("")
     public ResponseEntity<CommonResponse<?>> create(
-            @PathVariable Long regionId,
             @RequestBody @Valid StoreRequestDto.CreateDto requestDto
     ) {
         return ResponseEntity.ok(
-                CommonResponse.onSuccess(storeService.createStore(regionId, requestDto))
+                CommonResponse.onSuccess(storeService.createStore(requestDto))
         );
     }
+
+    @Operation(summary = "특정 지역의 가게 전체 조회 API", description = """
+            특정 지역의 가게를 전체 조회합니다.<br>
+            """)
+    @GetMapping("/regions")
+    public ResponseEntity<CommonResponse<?>> getAll(
+            @RequestParam String regionName) {
+        return ResponseEntity.ok(
+                CommonResponse.onSuccess(storeService.readAllStores(regionName))
+        );
+    }
+
+    @Operation(summary = "특정 가게의 미션 전체 조회 API")
+    @GetMapping("/{storeId}/missions")
+    public ResponseEntity<CommonResponse<?>> readAllMissions(
+            @PathVariable Long storeId,
+            @RequestParam int page,
+            @RequestParam int size
+    ) {
+        return ResponseEntity.ok(
+                CommonResponse.onSuccess(storeService.readAllMissions(storeId, page, size))
+        );
+    }
+
+    @Operation(summary = "특정 가게의 리뷰 전체 조회 API", description = """
+            특정 가게에 달린 리뷰 전체를 조회하는 API입니다.
+            """)
+    @GetMapping("/{storedId}/review")
+    public ResponseEntity<CommonResponse<?>> readAllReviews(
+            @PathVariable Long storedId
+    ) {
+        return ResponseEntity.ok(
+                CommonResponse.onSuccess(storeService.readAllReviews(storedId))
+        );
+    }
+
+    @Operation(summary = "가게 상세 조회 API")
+    @GetMapping("/{storeId}")
+    public ResponseEntity<CommonResponse<?>> findStore(
+            @PathVariable Long storeId
+    ) {
+        return ResponseEntity.ok(
+                CommonResponse.onSuccess(storeService.find(storeId))
+        );
+    }
+
+    @Operation(summary = "가게 전체 조회 API")
+    @GetMapping("")
+    public ResponseEntity<CommonResponse<?>> findAll() {
+        return ResponseEntity.ok(
+                CommonResponse.onSuccess(storeService.findAll())
+        );
+    }
+
 }

@@ -31,6 +31,8 @@ public class MissionController {
         );
     }
 
+    // 미션 도전하기
+    @Operation(summary = "미션 도전 API입니다.")
     @PatchMapping
     public ResponseEntity<CommonResponse<?>> challenge(
             @RequestParam Long storeId,
@@ -40,6 +42,33 @@ public class MissionController {
     ) {
         return ResponseEntity.ok(
                 CommonResponse.onSuccess(missionService.challenge(storeId, memberId, missionId))
+        );
+    }
+
+    // 진행중인 미션 조회
+    @Operation(summary = "진행 중인 미션 조회 API입니다.")
+    @GetMapping
+    public ResponseEntity<CommonResponse<?>> getMissions(
+            // TODO : SecurityContext를 통한 memberID 취득으로 변경
+            @PathVariable Long memberId
+    ) {
+        return ResponseEntity.ok(
+                CommonResponse.onSuccess(missionService.readAll(memberId))
+        );
+    }
+
+    // 미션 완료로 변경
+    @Operation(summary = "진행 중인 미션 조회 API입니다.")
+    @PatchMapping("/complete")
+    public ResponseEntity<CommonResponse<?>> doneMission(
+            @RequestParam Long storeId,
+            // TODO : SecurityContext를 통한 memberID 취득으로 변경
+            @RequestParam Long memberId,
+            @RequestParam Long missionId
+
+    ) {
+        return ResponseEntity.ok(
+                CommonResponse.onSuccess(missionService.done(storeId, memberId, missionId))
         );
     }
 }

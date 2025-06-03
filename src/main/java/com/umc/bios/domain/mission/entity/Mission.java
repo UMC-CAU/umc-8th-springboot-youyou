@@ -1,6 +1,7 @@
 package com.umc.bios.domain.mission.entity;
 
 import com.umc.bios.domain.common.BaseEntity;
+import com.umc.bios.domain.mission.dto.MissionResponseDto;
 import com.umc.bios.domain.store.entity.Store;
 import jakarta.persistence.*;
 import lombok.*;
@@ -37,4 +38,12 @@ public class Mission extends BaseEntity {
 
     @OneToMany(mappedBy = "mission", cascade = CascadeType.ALL)
     private List<MemberMission> memberMissionList = new ArrayList<>();
+
+    public static MissionResponseDto toResponseDto(Mission mission) {
+        return MissionResponseDto.builder()
+                .reward(mission.getReward())
+                .deadLine(mission.getDeadline())
+                .missionSpec(mission.getMissionSpec())
+                .build();
+    }
 }
