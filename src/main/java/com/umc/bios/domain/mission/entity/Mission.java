@@ -3,12 +3,17 @@ package com.umc.bios.domain.mission.entity;
 import com.umc.bios.domain.common.BaseEntity;
 import com.umc.bios.domain.store.entity.Store;
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
+@Getter
 @Table(name = "mission")
 public class Mission extends BaseEntity {
 
@@ -25,6 +30,7 @@ public class Mission extends BaseEntity {
     @Column(name = "mission_spec")
     private String missionSpec;
 
+    @Setter
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "store_id")
     private Store store;

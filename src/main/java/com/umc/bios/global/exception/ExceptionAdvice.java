@@ -2,8 +2,10 @@ package com.umc.bios.global.exception;
 
 import com.umc.bios.global.response.CommonResponse;
 import com.umc.bios.global.response.ErrorStatus;
+import io.swagger.v3.oas.annotations.Hidden;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.ConstraintViolationException;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatusCode;
@@ -20,6 +22,8 @@ import java.util.Optional;
 
 @Slf4j
 @RestControllerAdvice
+@Hidden
+@RequiredArgsConstructor
 public class ExceptionAdvice extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler
@@ -50,9 +54,11 @@ public class ExceptionAdvice extends ResponseEntityExceptionHandler {
     }
 
     @ExceptionHandler
-    public ResponseEntity<Object> exception(Exception e, WebRequest request) {
-        e.printStackTrace();
-        return (ResponseEntity) CommonResponse.onFailure(ErrorStatus._INTERNAL_SERVER_ERROR, e.getMessage());
+    public ResponseEntity<?> exception(Exception e, HttpServletRequest request) {
+
+        log.error("500 서버 오류", e);
+
+        return CommonResponse.onFailure(ErrorStatus._INTERNAL_SERVER_ERROR, e.getMessage());
     }
 
     @ExceptionHandler(value = CustomException.class)
