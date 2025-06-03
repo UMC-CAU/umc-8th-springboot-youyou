@@ -34,3 +34,10 @@ springdoc:
     path: /api-docs
   swagger-ui:
     path: /swagger-ui
+
+jwt:
+  token:
+    secretKey: ${JWT_SECRET_KEY}
+    expiration:
+      access: 14400000
+      refresh: 144000000
