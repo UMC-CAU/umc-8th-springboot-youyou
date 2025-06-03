@@ -3,15 +3,13 @@ package com.umc.bios.domain.member.entity;
 import com.umc.bios.domain.common.BaseEntity;
 import com.umc.bios.domain.member.common.Gender;
 import com.umc.bios.domain.member.common.MemberStatus;
+import com.umc.bios.domain.member.common.Role;
 import com.umc.bios.domain.member.common.SocialType;
 import com.umc.bios.domain.mission.entity.MemberMission;
 import com.umc.bios.domain.mission.entity.MemberPrefer;
 import com.umc.bios.domain.review.entity.Review;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
@@ -54,10 +52,17 @@ public class Member extends BaseEntity {
     @Enumerated(EnumType.STRING)
     private MemberStatus status;
 
+    @Enumerated(EnumType.STRING)
+    private Role role;
+
     private LocalDate inactiveDate;
 
     @Column(nullable = true, length = 50)
     private String email;
+
+    @Setter
+    @Column(name = "password")
+    private String password;
 
     @ColumnDefault("0")
     private Integer point;

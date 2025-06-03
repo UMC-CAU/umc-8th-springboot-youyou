@@ -1,8 +1,10 @@
 package com.umc.bios.domain.member.dto.request;
 
 import com.umc.bios.domain.member.common.Gender;
+import com.umc.bios.domain.member.common.Role;
 import com.umc.bios.domain.member.entity.Member;
 import com.umc.bios.domain.member.validation.ExistCategories;
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -16,6 +18,11 @@ public class MemberRequestDto {
     public static class JoinDto{
         @NotBlank
         String name;
+        @NotBlank
+        @Email
+        String email;
+        @NotNull
+        String password;
         @NotNull
         Integer gender;
         @NotNull
@@ -30,6 +37,8 @@ public class MemberRequestDto {
         String specAddress;
         @ExistCategories
         List<Long> preferCategory;
+        @NotNull
+        Role role;
     }
 
     public static Member toMember(MemberRequestDto.JoinDto requestDto) {
@@ -52,6 +61,8 @@ public class MemberRequestDto {
                 .specAddress(requestDto.getSpecAddress())
                 .gender(gender)
                 .name(requestDto.getName())
+                .email(requestDto.getEmail())
+                .role(requestDto.getRole())
                 .memberPreferList(new ArrayList<>())
                 .build();
     }
